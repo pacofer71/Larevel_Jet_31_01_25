@@ -13,7 +13,10 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <i class="fa-solid fa-gauge mr-1"></i>{{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('showuserposts') }}" :active="request()->routeIs('showuserposts')">
+                    <i class="fa-solid fa-gear mr-1"></i>Posts
                     </x-nav-link>
                 </div>
             </div>
@@ -122,6 +125,9 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('showuserposts') }}" :active="request()->routeIs('showuserposts')">
+                {{ __('Posts') }}
             </x-responsive-nav-link>
         </div>
 

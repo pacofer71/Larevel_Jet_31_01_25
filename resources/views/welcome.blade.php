@@ -6,7 +6,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             @foreach($posts as $item)
             <article @class([
-                'p-1 rounded-2xl shadow-xl h-96 bg-cover bg-no-repeat',
+                'p-1 rounded-2xl shadow-xl bg-cover bg-no-repeat',
                 'md:col-span-2'=>$loop->first
                 ]) style="background-image:url({{Storage::url($item->imagen)}})">
                 <div class="flex flex-col justify-between h-full text-center items-center">
