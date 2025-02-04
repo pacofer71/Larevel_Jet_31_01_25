@@ -10,7 +10,7 @@ class Post extends Model
 {
     /** @use HasFactory<\Database\Factories\PostFactory> */
     use HasFactory;
-    protected $fillable=['titulo', 'contenido', 'estado', 'imagen', 'user_id', 'catagory_id'];
+    protected $fillable=['titulo', 'contenido', 'estado', 'imagen', 'user_id', 'category_id'];
 
     //Relacion 1:N con categories
     public function category(): BelongsTo{
